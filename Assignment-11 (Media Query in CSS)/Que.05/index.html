@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .header {
+            background-color: black;
+            width: 100px;
+            height: 100vh;
+            color: white;
+            float: left;
+        }
+
+        .sidebar {
+            background-color: rgb(48, 189, 137);
+            width: 1430px;
+            /* margin-left: 50px; */
+            /* margin-right: 50px; */
+            height: 50vh;
+        }
+
+        .content {
+            background-color: orange;
+            width: 1430px;
+            /* margin-left: 50px; */
+            /* margin-right: 50px; */
+            height: 50vh;
+        }
+
+        .footer {
+            background-color: black;
+            width: 100px;
+            color: white;
+            height: 100vh;
+            float: right;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                flex-direction: column;
+                background: #fff;
+            }
+
+            .header {
+                width: 100%;
+                height: 50px;
+                text-align: center;
+            }
+
+            .main {
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .sidebar {
+                height: 10%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .content {
+                height: 10%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer {
+                width: 100%;
+                height: 50px;
+                margin-top: -97px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Box1</div>
+        <div class="main">
+            <div class="sidebar">Box2</div>
+            <div class="content">Box3</div>
+        </div>
+        <div class="footer">Box4</div>
+    </div>
+</body>
+
+</html>

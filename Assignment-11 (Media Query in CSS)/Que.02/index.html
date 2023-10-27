@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-around;
+            border: 2px solid black;
+            max-width: 1200px;
+            gap: 4px;
+        }
+
+        .img {
+            flex-basis: calc(33.33% - 20px);
+            height: 550px;
+            width: 30%;
+            display: flex;
+        }
+
+        @media screen and (max-width: 800px) {
+            .img {
+                flex-basis: calc(50% - 20px);
+            }
+
+            .container {
+                flex-wrap: wrap;
+            }
+
+            .container {
+                height: 1150px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .img {
+                flex-basis: calc(100% - 20px);
+            }
+            .container {
+                flex-wrap: wrap;
+                height: 1750px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img"><img
+                src="https://fastly.picsum.photos/id/903/200/300.jpg?hmac=bT2dTWTFYT3TyM7cBatAwmhTtJuzlHBXtqn_kH-z3lU"
+                alt=""></div>
+        <div class="img"><img
+                src="https://fastly.picsum.photos/id/903/200/300.jpg?hmac=bT2dTWTFYT3TyM7cBatAwmhTtJuzlHBXtqn_kH-z3lU"
+                alt=""></div>
+        <div class="img"><img
+                src="https://fastly.picsum.photos/id/903/200/300.jpg?hmac=bT2dTWTFYT3TyM7cBatAwmhTtJuzlHBXtqn_kH-z3lU"
+                alt=""></div>
+    </div>
+</body>
+
+</html>
